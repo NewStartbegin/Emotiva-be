@@ -3,7 +3,7 @@ name: Deploy Backend to AWS
 on:
   push:
     branches:
-      - main  # Setiap ada push ke branch main, trigger aksi ini
+      - master  # Setiap ada push ke branch main, trigger aksi ini
 
 jobs:
   deploy:
