@@ -8,7 +8,7 @@ class Config:
     # Flask config
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'emotiva-math-secret-key-2024'
     DEBUG = True
-    
+    # test
     # CORS config
     CORS_HEADERS = 'Content-Type'
     
