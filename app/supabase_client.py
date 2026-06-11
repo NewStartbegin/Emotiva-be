@@ -48,7 +48,7 @@ class SupabaseClient:
         try:
             # Read file content
             file_content = file.read()
-            
+            #test push
             # Upload ke Supabase
             response = self.client.storage.from_(self.bucket_name).upload(
                 path=file_path,
