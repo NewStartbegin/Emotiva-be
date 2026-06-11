@@ -23,7 +23,7 @@ class LLMService:
         self.use_llm = use_llm_env.lower() == 'true'
         self.model = None
         
-        # Debug logging
+        # Debug logging test
         print(f"🔍 LLM Service Initialization:")
         print(f"   USE_LLM env: '{use_llm_env}'")
         print(f"   use_llm (parsed): {self.use_llm}")
@@ -66,6 +66,7 @@ class LLMService:
         
         return f"""{greeting}
 
+        
 📚 **Materi tentang "{topic}" belum tersedia**
 
 Maaf ya, saat ini belum ada materi pembelajaran dari guru untuk topik ini. 
@@ -168,7 +169,7 @@ Terima kasih atas pengertiannya! 🙏"""
         # Emotion-based tone
         emotion_tones = {
             'cemas': "Gunakan nada yang menenangkan dan supportive. Mulai dari konsep paling dasar. Berikan encouragement.",
-            'bingung': "Gunakan nada yang patient. Breakdown konsep menjadi bagian kecil. Berikan banyak contoh.",
+            'bingung': "Gunakan nada yang patient. Breakd   own konsep menjadi bagian kecil. Berikan banyak contoh.",
             'netral': "Gunakan nada yang informatif dan balanced.",
             'percaya_diri': "Gunakan nada yang challenging. Boleh masuk ke detail lebih dalam."
         }
