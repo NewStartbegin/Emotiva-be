@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    container_name: emotiva-backend
+    restart: always  # Otomatis nyala lagi jika server EC2 di-restart
+    ports:
+      - "5000:5000"  # Memetakan Port 5000 EC2 ke Port 5000 Container
+    env_file:
+      - .env         # Memasukkan semua variabel (database, AI) secara otomatis
+    volumes:
+      - .:/app       # (Opsional) Sinkronisasi folder lokal dengan dalam container

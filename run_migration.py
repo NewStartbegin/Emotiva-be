@@ -7,10 +7,10 @@ import sys
 
 # Database configuration
 DB_CONFIG = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': '',  # Update if you have a password
-    'database': 'emotiva-math',  # Fixed: use hyphen like in .env
+    'host': 'emotiva-math.cf06csog0xra.ap-southeast-2.rds.amazonaws.com',
+    'user': 'admin',
+    'password': 'admin123',  # Update if you have a password
+    'database': 'emotiva_math',  # Fixed: use hyphen like in .env
     'charset': 'utf8mb4'
 }
 

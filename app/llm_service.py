@@ -36,7 +36,7 @@ class LLMService:
                 genai.configure(api_key=self.api_key)
                 # Using Gemini 1.5 Flash - faster and more efficient
                 # self.model = genai.GenerativeModel('gemini-2.5-flash')
-                self.model = genai.GenerativeModel('gemma-3-4b-it')
+                self.model = genai.GenerativeModel('gemini-2.5-flash')
                 print("✅ LLM (Google Gemini Flash 2.5) initialized successfully")
             except Exception as e:
                 print(f"⚠️ LLM initialization failed: {e}")

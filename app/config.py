@@ -18,11 +18,11 @@ class Config:
     # Contoh: mysql+pymysql://root:password@localhost:3306/emotiva_math
     
     # Default MySQL settings
-    MYSQL_HOST = os.environ.get('MYSQL_HOST', 'localhost')
+    MYSQL_HOST = os.environ.get('MYSQL_HOST', 'emotiva-math.cf06csog0xra.ap-southeast-2.rds.amazonaws.com')
     MYSQL_PORT = os.environ.get('MYSQL_PORT', '3306')
-    MYSQL_USER = os.environ.get('MYSQL_USER', 'root')
-    MYSQL_PASSWORD = os.environ.get('MYSQL_PASSWORD', '')
-    MYSQL_DATABASE = os.environ.get('MYSQL_DATABASE', 'emotiva-math')
+    MYSQL_USER = os.environ.get('MYSQL_USER', 'admin')
+    MYSQL_PASSWORD = os.environ.get('MYSQL_PASSWORD', 'admin123')
+    MYSQL_DATABASE = os.environ.get('MYSQL_DATABASE', 'emotiva_math')
     
     # Construct MySQL URI
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
