@@ -23,7 +23,7 @@ class LLMService:
         self.use_llm = use_llm_env.lower() == 'true'
         self.model = None
         
-        # Debug logging test untuk video demo tugas besar
+        # Debug logging test untuk tugas besar kompan
         print(f"🔍 LLM Service Initialization:")
         print(f"   USE_LLM env: '{use_llm_env}'")
         print(f"   use_llm (parsed): {self.use_llm}")
